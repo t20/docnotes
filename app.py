@@ -32,6 +32,11 @@ def share():
     return render_template('share.html')
 
 
+@app.route('/resources')
+def resources():
+    return render_template('resources.html')
+
+
 @app.route('/register')
 def register():
     return render_template('register.html')
