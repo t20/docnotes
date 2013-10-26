@@ -23,7 +23,7 @@ def followups():
 
 
 @app.route('/symptoms')
-def index():
+def symptoms():
     return render_template('symptoms.html')
 
 
