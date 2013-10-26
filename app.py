@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
@@ -47,7 +48,11 @@ def login():
     return render_template('login.html')
 
 
-
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    port = int(os.environ.get('PORT', 0))
+    if port:
+        app.debug = False
+        app.run(host='0.0.0.0', port=port)
+    else:
+        app.debug = True
+        app.run()
