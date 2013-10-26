@@ -27,19 +27,14 @@ def symptoms():
     return render_template('symptoms.html')
 
 
-@app.route('/register')
-def register():
-    return render_template('register.html')
-
-
-@app.route('/register')
-def register():
-    return render_template('register.html')
-
-
 @app.route('/share')
 def share():
     return render_template('share.html')
+
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
 
 
 @app.route('/login')
