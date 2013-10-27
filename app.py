@@ -8,6 +8,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/appointments')
+def appointments():
+    return render_template('appointments.html')
+
+
 @app.route('/medications')
 def medications():
     return render_template('medications.html')
