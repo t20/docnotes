@@ -48,6 +48,11 @@ def login():
     return render_template('login.html')
 
 
+@app.route('/notes')
+def notes():
+    return render_template('notes.html')
+
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 0))
     if port:
