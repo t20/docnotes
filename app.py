@@ -48,6 +48,11 @@ def resources():
     return render_template('resources.html')
 
 
+@app.route('/report')
+def report():
+    return render_template('report.html')
+
+
 @app.route('/register')
 def register():
     return render_template('register.html')
