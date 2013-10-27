@@ -7,32 +7,30 @@
         <thead>
             <tr>
                 <th></th>
-                <th></th>
                 <th>Name</th>
                 <th>X</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
                 <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td></td>
-                <td></td>
+                <td>Alice Smith</td>
                 <td></td>
             </tr>
             <tr>
-                <td>3</td>
                 <td></td>
+                <td>Bob Smith</td>
                 <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Eve Smith</td>
                 <td></td>
             </tr>
         </tbody>
         </table>
     </div>
+    <button class="btn btn-primary btn-lg" type="button">Share with Another User</button>
+    <img src="{{ url_for('static', filename='img/qrcode.png') }}"/>
 </div>
 {% endblock %}
