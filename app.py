@@ -63,6 +63,12 @@ def notes():
     return render_template('notes.html')
 
 
+@app.route('/api')
+def api():
+    data = request.args.get('data', "")
+    process_data(data)
+    return jsonify({'success': True})
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 0))
     if port:
